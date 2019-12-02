@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>单链表</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			list-style:  none;
+		}
+		li {
+			margin-bottom: 20px;
+		}
+		.label {
+			width: 100px;
+			display: inline-block;
+			text-align: left;
+			margin-right: 20px;
+		}
+		input {
+			width: 120px;
+			height: 25px;
+			line-height: 25px;
+			border: 1px solid #111;
+			margin-right: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>单链表</h1>
+	<h2>请在控制台查看结果</h2>
+	<ul>
+		<li>
+			<span class="label">尾部添加</span>
+			<input type="text" name="" id="addBtn">  <button onclick="appendLinkedList()">append</button>
+		</li>
+		<li>
+			<span class="label">删除</span>
+			<input type="text" name="" id="removeBtn">  <button>delete</button>
+		</li>
+		<li>
+			<span class="label">指定插入：</span>
+			<input type="text" name="" id="insertBtn">  <button>append</button>
+		</li>
+	</ul>
+	<div>
+		<button click="">展示链表</button>
+	</div>
+
+	<script type="text/javascript" src="./SinglyLinkedlist.js"></script>
+
+	<script type="text/javascript">
+		const LList = new LinkedList()
+
+		let appendBtn = document.getElementById("appendBtn");
+		let removeBtn = document.getElementById("removeBtn");
+		let insertBtn = document.getElementById("insertBtn");
+
+		// 尾部添加
+		function appendLinkedList(value) {
+			console.log(appendBtn.value)
+			displaylinkedList(appendBtn.value)
+		}
+		// 尾部删除
+		function deleteLinkedList(value) {
+
+		}
+
+		function displaylinkedList(argument) {
+			// body...
+			LList.display();
+		}
+	</script>
+</body>
+</html>
