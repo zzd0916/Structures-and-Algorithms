@@ -20,7 +20,7 @@ class LinkedList {
 
 	// 根据value查找节点
 	findByValue (item) {
-		let currentNode = this.head.next
+		let currentNode = this.head
 		while( currentNode !== null && currentNode.element !== item) {
 			currentNode = currentNode.next
 		}
@@ -31,7 +31,7 @@ class LinkedList {
 
 	// 根据index查找节点，下标从0开始
   	findByIndex (index) {
-		let currentNode = this.head.next
+		let currentNode = this.head
 		let pos = 0
 		while( currentNode !== null && pos !== index) {
 			currentNode = currentNode.next
